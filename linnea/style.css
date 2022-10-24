@@ -1,8 +1,8 @@
 html,
 body {
   margin: 0;
-  padding: 20;
-  font-family: monospace;
+  padding: 100px;
+  font-family: georgia;
 }
 
 *, *:before, *:after {
@@ -20,7 +20,7 @@ body {
   background-color: #00ccd6;
 background-image: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(29,171,253,1) 50%, rgba(252,176,69,1) 100%);
 background-size: 500px 500px;
-  text-align: center;
+  text-align: left;
   font-size: 2em;
 }
 
