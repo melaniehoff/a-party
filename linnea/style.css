@@ -1,0 +1,112 @@
+html,
+body {
+  margin: 0;
+  padding: 20;
+  font-family: monospace;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: 'violet';
+  src: url('./fonts/VioletSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #00ccd6;
+background-image: radial-gradient(circle, rgba(131,58,180,1) 0%, rgba(29,171,253,1) 50%, rgba(252,176,69,1) 100%);
+background-size: 500px 500px;
+  text-align: center;
+  font-size: 2em;
+}
+
+h1{
+font-size: 200px;
+  background: -webkit-linear-gradient(#eee, transparent);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.my-fun-class {
+  width: 50%;
+  color: black;
+  border: 0px solid white;
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+
+li:nth-child(1){
+  font-size: 10px;
+  }
+  li:nth-child(2){
+    font-size: 12px;
+    }
+    li:nth-child(3){
+      font-size: 14px;
+      }
+      li:nth-child(4){
+        font-size: 16px;
+        }
+        li:nth-child(5){
+          font-size: 18px;
+          }
+          li:nth-child(6){
+            font-size: 20px;
+            }
+            li:nth-child(7){
+              font-size: 22px;
+              }  li:nth-child(8){
+                  font-size: 24px;
+                  }  li:nth-child(9){
+                      font-size: 26px;
+                      }  li:nth-child(10){
+                          font-size: 28px;
+                          }  li:nth-child(11){
+                              font-size: 30px;
+                              }  li:nth-child(12){
+                                  font-size: 32px;
+                                  }  li:nth-child(13){
+                                      font-size: 34px;
+                                      }  li:nth-child(14){
+                                          font-size: 36px;
+                                          }  li:nth-child(15){
+                                              font-size: 38px;
+                                              } li:nth-child(16){
+                                                  font-size: 40px;
+                                                  } li:nth-child(17){
+                                                      font-size: 42px;
+                                                      } li:nth-child(18){
+                                                          font-size: 44px;
+                                                          } li:nth-child(19){
+                                                              font-size: 46px;
+                                                              } li:nth-child(20){
+                                                                  font-size: 48px;
+                                                                  } li:nth-child(21){
+                                                                      font-size: 50px;
+                                                                      } li:nth-child(22){
+                                                                          font-size: 52px;
+                                                                          } li:nth-child(23){
+                                                                              font-size: 54px;
+                                                                              } li:nth-child(24){
+                                                                                  font-size: 56px;
+                                                                                  }
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+}
