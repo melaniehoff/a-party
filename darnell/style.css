@@ -1,0 +1,66 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* @font-face {
+  font-family: 'violet';
+  src: url('./fonts/VioletSans-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+body {
+  background-color: #000;
+  color: yellow;
+  display: block;
+  margin: auto;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* .triangle{
+  width: 0; 
+  height: 0; 
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  
+  border-top: 20px solid #f00;
+} */
+
+details{
+  padding-left: 10px;
+}
+
+.my-fun-class {
+  width: 50%;
+  color: white;
+  border: 10px ridge white;
+  display: block;
+  margin: auto;
+  text-align: left;
+  background-color: white;
+  display: block;
+  opacity: 0;
+}
+
+div.my-fun-class:hover{
+  opacity: 1;
+}
+
+::selection{
+  background-color: #000;
+  color: wite;
+}
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    background-color: black;
+  }
+
+} */
