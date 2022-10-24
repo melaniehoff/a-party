@@ -17,11 +17,17 @@ body {
 } */
 
 body {
-  background-color: #000;
+  background-color: blue;
   color: yellow;
   display: block;
   margin: auto;
   font-family: 'Times New Roman', Times, serif;
+}
+
+h1{
+  font-family: "Brush Script MT", cursive;
+  font-size: 10em;
+  margin-left: 50px;
 }
 
 /* .triangle{
