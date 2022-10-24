@@ -16,49 +16,22 @@ body {
   font-style: normal;
 }
 
+a, a:visited {
+background: -webkit-linear-gradient(#eee, #333);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+text-decoration: underline !important;
+}
+
+li:hover {
+  color: blue;
+}
+
 body {
   background-color: darkgrey;
   color: yellow;
   text-align: center;
   font-size: 2em;
-}
-
-div {
-  padding: 25px;
-  border: thin solid black;
-  color: white;
-}
-
-.red {
-  background-color: red;
-}
-
-.orange {
-  background-color: orange;
-}
-
-.yellow {
-  background-color: yellow;
-}
-
-.green {
-  background-color: #00ff00;
-}
-
-.blue {
-  background-color: blue;
-}
-
-.violet {
-  background-color: violet;
-  color: black;
-}
-
-h1 {
-  background: #FF0000;
-background: radial-gradient(circle farthest-corner at center center, #FF0000 0%, #FFFF00 25%, #05C1FF 50%, #FFFF00 75%, #FF0000 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
 }
 
 .my-fun-class {
@@ -68,48 +41,8 @@ background: radial-gradient(circle farthest-corner at center center, #FF0000 0%,
   display: block;
   margin: auto;
   text-align: left;
-}
-
-
-ul li {
-    list-style: square;
-}
-
-ul li::marker {
-    animation-name: GFG;
-    animation-duration: 0.5s;
-    animation-fill-mode: forwards;
-}
-
-ul li:nth-child(1)::marker {
-    animation-delay: 0;
-}
-
-ul li:nth-child(12)::marker {
-    animation-delay: 0.5s;
-}
-
-ul li:nth-child(16)::marker {
-    animation-delay: 1.0s;
-}
-
-ul li:nth-child(20)::marker {
-    animation-delay: 1.5s;
-}
-
-ul li:nth-child(5)::marker {
-    animation-delay: 2.0s;
-}
-
-@keyframes GFG {
-    from {
-        font-size: 12px;
-    }
-
-    to {
-        font-size: 30px;
-        color: limegreen;
-    }
+  border-radius: 20px;
+  background-color: lightgrey;
 }
 
 @media only screen and (max-width: 600px) {
