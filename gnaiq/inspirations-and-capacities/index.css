@@ -1,0 +1,60 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.capacities{
+    background-color: yellow;
+}
+
+.inspirations{
+    background-color: blue;
+}
+
+.capacities,
+.inspirations{
+    width: 50%;
+    height: 50%;
+    overflow-y: scroll;
+}
+
+.ideas{
+    width: 100%;
+    height: 50%;
+    overflow-y: scroll;
+    background-color: green;
+}
+
+h1{
+    padding: 0;
+    margin: 0;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+ul{
+    list-style: decimal;
+    color: white;
+    mix-blend-mode: difference;
+}
+
+/* li{
+    display: none;
+} */
+
+li a{
+    color: white;
+    font-size: 24pt;
+}

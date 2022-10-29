@@ -1,0 +1,286 @@
+*{
+    box-sizing: border-box;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-wrap: wrap;
+    opacity: 0;
+    animation: load 30s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+
+    10%{
+        opacity: 1;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
+    }
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 25%;
+    text-align: center;
+    align-items: center;
+    font-size: 36pt;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section div{
+    filter: blur(8px);
+}
+
+.yes-no div{
+    width: 50%;
+}
+
+.letters div{
+    position: relative;
+    width: calc(100% / 13);
+    height: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+/* E */
+.letters div:nth-of-type(5){
+    filter: blur(0px);
+}
+
+.letters div:nth-of-type(5) span{
+    display: block;
+    height: 100%;
+    position: absolute;
+    filter: blur(8px);
+}
+
+.letters div:nth-of-type(5) span:nth-of-type(1){
+    opacity: 0;
+}
+
+/* I */
+.letters div:nth-of-type(9){
+    filter: blur(0px);
+}
+
+.letters div:nth-of-type(9) span{
+    display: block;
+    height: 100%;
+    position: absolute;
+    filter: blur(8px);
+}
+
+.letters div:nth-of-type(9) span:nth-of-type(1){
+    opacity: 0;
+}
+
+.numbers div{
+    position: relative;
+    width: calc(100% / 10);
+    height: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+/* 1 */
+.numbers div:nth-of-type(1){
+    filter: blur(0px);
+}
+
+.numbers div:nth-of-type(1) span{
+    display: block;
+    height: 100%;
+    position: absolute;
+    filter: blur(8px);
+}
+
+.numbers div:nth-of-type(1) span:nth-of-type(1){
+    opacity: 0;
+}
+
+/* 2 */
+.numbers div:nth-of-type(2){
+    filter: blur(0px);
+}
+
+.numbers div:nth-of-type(2) span{
+    display: block;
+    height: 100%;
+    position: absolute;
+    filter: blur(8px);
+}
+
+.numbers div:nth-of-type(2) span:nth-of-type(1){
+    opacity: 0;
+}
+
+.cya div{
+    width: calc(100% / 3);
+}
+
+@keyframes ouija-selection {
+    0%{
+        filter: blur(8px);
+    }
+
+    50%{
+        filter: blur(0px);
+    }
+
+    100%{
+        filter: blur(8px);
+    }
+}
+
+@keyframes ouija-selection-doubles {
+    0%{
+        filter: blur(8px);
+        opacity: 0;
+    }
+
+    50%{
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    100%{
+        filter: blur(8px);
+        opacity: 0;
+    }
+}
+
+/* YES */
+.yes-no div:nth-of-type(1){
+    animation: ouija-selection 1s 4s;
+}
+
+/* Y */
+.letters div:nth-of-type(25){
+    animation: ouija-selection 1s 5s;
+}
+
+/* O */
+.letters div:nth-of-type(15){
+    animation: ouija-selection 1s 6s;
+}
+
+/* U */
+.letters div:nth-of-type(21){
+    animation: ouija-selection 1s 7s;
+}
+
+/* A */
+.letters div:nth-of-type(1){
+    animation: ouija-selection 1s 8s;
+}
+
+/* R */
+.letters div:nth-of-type(18){
+    animation: ouija-selection 1s 9s;
+}
+
+/* E */
+.letters div:nth-of-type(5) span:nth-of-type(1){
+    animation: ouija-selection-doubles 1s 10s;
+}
+
+/* I */
+.letters div:nth-of-type(9) span:nth-of-type(1){
+    animation: ouija-selection-doubles 1s 11s;
+}
+
+/* N */
+.letters div:nth-of-type(14){
+    animation: ouija-selection 1s 12s;
+}
+
+/* V */
+.letters div:nth-of-type(22){
+    animation: ouija-selection 1s 13s;
+}
+
+/* I */
+.letters div:nth-of-type(9) span:nth-of-type(2){
+    animation: ouija-selection 1s 14s;
+}
+
+/* T */
+.letters div:nth-of-type(20){
+    animation: ouija-selection 1s 15s;
+}
+
+/* E */
+.letters div:nth-of-type(5) span:nth-of-type(2){
+    animation: ouija-selection 1s 16s;
+}
+
+/* D */
+.letters div:nth-of-type(4){
+    animation: ouija-selection 1s 17s;
+}
+
+/* 1 */
+.numbers div:nth-of-type(1) span:nth-of-type(1){
+    animation: ouija-selection-doubles 1s 18s;
+}
+
+/* 0 */
+.numbers div:nth-of-type(10){
+    animation: ouija-selection 1s 19s;
+}
+
+/* 3 */
+.numbers div:nth-of-type(3){
+    animation: ouija-selection 1s 20s;
+}
+
+/* 1 */
+.numbers div:nth-of-type(1) span:nth-of-type(2){
+    animation: ouija-selection 1s 21s;
+}
+
+/* 2 */
+.numbers div:nth-of-type(2) span:nth-of-type(1){
+    animation: ouija-selection-doubles 1s 22s;
+}
+
+/* 2 */
+.numbers div:nth-of-type(2) span:nth-of-type(2){
+    animation: ouija-selection 1s 23s;
+}
+
+/* SEE */
+.cya div:nth-of-type(1){
+    animation: ouija-selection 1s 24s;
+}
+
+/* YOU */
+.cya div:nth-of-type(2){
+    animation: ouija-selection 1s 25s;
+}
+
+/* THERE */
+.cya div:nth-of-type(3){
+    animation: ouija-selection 1s 26s;
+}
