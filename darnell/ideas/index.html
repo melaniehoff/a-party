@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Party is...</title>
+
+    <style>
+        *, body, html{
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        @font-face {
+            font-family: 'FT88-Italic';
+            src: url("FT88-Italic") format("woff");
+            font-family: 'Kisses';
+            src: url("Hershey-Noailles-Times-Mono-Regular.woff") format("woff");
+        }
+
+        body{
+            background-color: blue;
+        }
+
+        nav p, footer p{
+            color: white;
+            font-size: 30px;
+            font-weight: lighter;
+            margin: 10px;
+            font-family: 'FT88-Italic', Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        footer p{
+            color: blue;
+        }
+
+        .option, .optionTwo, .optionThree{
+            width: 600px;
+            height: auto;
+            /* border: red solid 1px; */
+            font-size: 15vw;
+            color: white;
+            display: inline;
+            margin-top: 100px;
+            margin-left: 10px;
+            font-family:'Kisses', 'Arial Narrow', Arial, Helvetica, sans-serif;
+        }
+
+        .option{
+            color: red;
+        }
+
+        .optionTwo{
+            color: orange;
+        }
+
+        /* .optionThree{
+            color: green;
+        } */
+
+        .smile{
+            font-family: 'Kisses', 'Arial Narrow', Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            margin-left: 5px;
+            /* filter: blur(1.2px); */
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        a :hover{
+            color: white;
+            text-decoration: none !important;
+        }
+
+        ::selection{
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav><p>How should we celebrate tonight?</p></nav>
+
+    <section>
+
+        <p class="smile">capacity</p>
+
+   <div class="option">
+   </div> <!---end of option-->
+
+   <p  class="smile">inspiration</p>
+
+   <div class="optionTwo">
+   </div> <!---end of optionTwo-->
+
+   <!-- <div class="optionThree">
+   </div> -end of optionThree -->
+</section> <!---end of section-->
+
+<footer>
+    <a href="https://darnhen.github.io/screenings/"><p>maybe we should..</p></a>
+</footer>
+
+     <script src="flipbook-mouse.js"></script>
+</body>
+</html>
