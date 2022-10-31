@@ -1,0 +1,125 @@
+html,
+body { background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Alegreya+Sans:ital@0;1&display=swap');
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+div.text {
+  z-index:10!important;
+  position: relative;
+}
+div.flag {
+  z-index:1;
+  position:fixed;
+          top:50%;
+          left:50%;
+}
+h1{
+  font-size: 80px!important;
+  color:#fff;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: italic;
+
+}
+h1.poem{
+  font-size: 180px!important;
+  color:#fff;
+  font-family: 'Alegreya Sans', sans-serif;
+  font-style: italic;
+
+}
+h2{
+  font-size: 50px;
+  color:#fff;
+  font-family: 'Alegreya Sans', sans-serif;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 55px;
+
+}
+
+h3 {
+  font-size: 50px;
+  color:#fff;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  border-bottom: 1px solid #fff;
+
+}
+p {   font-family: 'Alegreya Sans', sans-serif;
+font-size: 50px;
+    color:#fff;
+      }
+
+p.credit{
+   font-family: 'Alegreya Sans', sans-serif;
+font-size: 20px;
+    color:#fff;
+    line-height: 25px;
+    margin-top: 0;
+      margin-bottom: 0;
+      }
+
+ul {   font-family: 'Alegreya Sans', sans-serif;
+        font-size: 50px;
+            color:#fff;
+              text-align: left;
+                margin-bottom: 20px;}
+
+li{  margin-bottom: 100px;}
+.welcome-everyone
+{ color:#fff;
+  margin-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.invite-the-body
+{ color:#fff;
+  margin-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.invite-a-list
+{ margin-top: 20px;
+  margin-bottom: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+a:link{
+  text-decoration: none;
+  color:#fff;
+  border-bottom: 1px solid #fff;
+}
+.poem{
+  margin-top:50px;
+}
+.poet{
+  font-size: 50px!important;
+  color:#fff;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-style: italic;
+}
+.my-fun-class {
+  width: 50%;
+  color: black;
+  border: 0px solid white;
+  display: block;
+  margin: auto;
+  text-align: left;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  body {
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+}

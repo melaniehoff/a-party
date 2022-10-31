@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WELCOME EVERYONE TO A COMMUNAL FLAG MAKING WORKSHOP!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Alegreya+Sans:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="party-style.css">
+<style type="text/css" media="screen">
+
+</style>
+
+</head>
+<body>
+  <div class="flag">
+  <canvas id="flag">
+  </canvas>
+</div>
+  <div class="text">
+    <div class="poem">
+      <h1 class="poem">
+Your dress waving in the wind.</br>
+This</br>
+is the only flag I love.</br>
+</h1>
+</div>
+<div class="poet">
+<p class="credit">
+  Garous Abdolmalekian</br>
+  translated by Idra Novey and Ahmad Nadalizadeh
+  </br></br>
+</p>
+</div>
+
+  <div>
+    <div class="welcome-everyone">
+  <h3> WELCOME EVERYONE TO
+A COMMUNAL FLAG MAKING WORKSHOP!</h3>
+<p>
+Flags are everywhere, and they all represent something, someone or somewhere. Many times flags are ascribed to you whether you like it or not - whether that be the country you were born in, your religious affiliation or even your sexuality or gender. Sometimes these flags feel spot on and the design looks awesome, and sometimes they feel like they don’t represent your identity, origins, beliefs or values at all.
+</p>
+<p>
+Flags aren’t only things that are designed by or commissioned by special entities -
+flags can be made by anyone, to represent anything or anyone! And this week they can be made by you if you want to join our workshop.
+</p>
+<h2>
+FRIDAY AFTERNOON
+IN THE PARK ON THE BIG LAWN </br>
+Supplies, snacks and drinks provided!
+No previous experience of specific skills needed!
+</h2>
+</div>
+<div class="invite-the-body">
+<p>
+On Friday afternoon this week we’ll meet up in the park on the big lawn to learn how to make flags! Blankets to sit on, crafting supplies as well as food and drinks will all be provided, but feel free to bring anything that you want to share or that might be of value to the group. You can also add songs to the communal playlist we’ll be playing here.
+</p>
+</div>
+<div class="invite-the-body">
+  <p>
+No previous experience in making flags, crafting, sewing, design skills necessary. We will all make however many or few flags that we decide upon together. Rough schedule is a as follows:
+</p>
+</div>
+<div class="invite-a-list">
+<ul>
+<li>The weather will be perfect temperature and level of humidity for most and for those who need/want it there will be accommodations made available to ensure everyones comfortable.
+<li>The location will be physically and mentally accessible to most and for those who need/want it there will be accommodations made available to ensure everyones comfortable. Same goes with the food and drinks.
+<li>As the group meets and settles on the lawn, we’ll get introduced to one another. A live band will play songs off the communal playlist in such a way that those who want to socialize can still hear each other and those who want to listen to the music in a more focused way can do so as well.
+<li>After a few brief remarks with thanks to the land, history and to the people in attendance (and those who are there in spirit), the group will review and amend the community guidelines as necessary - when we have come to consensus and agreed upon the guidelines the workshop will start.
+<li>To begin with we will have a short introduction about the history and uses of flag historically and artistically by a volunteer flag researcher. This will be a casual presentation that will be interspearced and enriched by the group's own feelings, experience and opinions about flags.
+<li>After that the group will decide on the general design, format, texture, weight of the flag/flags to be made.
+<li>The making of the flag/s will start and will continue until the group is done, this might take several workshops if decided so by the group, and depending on the scope of the flag making.
+<li>At the end of the making session/s, everyone will gather up any scraps left over and tools used and put them in their designated bins. These bins will together with the flags in process be biked back to a safe and clean storage space near the park by volunteers with bikes.
+<li>The group will also help clean up the lawn and any dishes used that will also be cleaned by volunteers at the storage space.
+<li>A few closing remarks will be said at the end of each session, to clarify next steps and meeting times.
+<li>There will be time after the workshop to talk and process for those who want to.
+</ul>
+</br>
+<div class="invite-the-body">
+  <p>
+If the group decides to, we have the option to display the flags in a march throughout the city, after which we can either bring them home to store until the next march and/or workshop or mount the flags all over the city.
+</br></br>
+We look forward to seeing you there!
+</br></br>
+All the love from us, </br> the flag making facilitators
+</p>
+</div>
+
+ </p>
+  </div>
+</div>
+
+<script type="text/javascript">
+window.onload = function(){
+	var flag = document.getElementById('flag');
+	drawAmericanFlag( flag, 1020, 0, 500 );
+	flag.style.marginLeft = -(flag.width/2)+'px';
+	flag.style.marginTop  = -(flag.height/2)+'px';
+	var timer = waveFlag( flag, 50, 10, 150, 200, -0.1 );
+};
+
+function drawAmericanFlag( canvas, width, padX, padY ){
+	if (!padX) padX = 0;
+	if (!padY) padY = 0;
+	// http://www.montney.com/flag/proportions.htm
+	var a = width / 1.9;
+	var b = width;
+	var c = 7*a/13;
+	var d = 1.76*a;
+	var e = 0.054*a;
+	var g = 0.063*a;
+	var k = 0.0616*a;
+	var l = a / 13;
+	canvas.width  = b+2*padX;
+	canvas.height = a+2*padY;
+	var ctx = canvas.getContext('2d');
+
+	// Stripes
+	ctx.fillStyle = 'rgba(2,0,36,1)';
+	ctx.fillRect(padX,padY,b,a);
+	ctx.fillStyle = 'rgba(2,0,36,1)';
+	for (var i=0;i<13;i+=2) ctx.fillRect(padX,i*l+padY,b,l);
+
+	// Field
+	ctx.fillStyle = 'rgba(2,0,36,1)';
+	ctx.fillRect(padX,padY,d,c);
+
+	// Stars
+	ctx.fillStyle = 'rgba(2,0,36,1)';
+	for (var row=1;row<=9;++row){
+		for (var col=1;col<=11;++col){
+			if ((row%2==1 && col%2==0) || (row%2==0 && col%2==1)) continue;
+			ctx.beginPath();
+			ctx.arc(col*g+padX,row*e+padY,k/3,0,Math.PI*2,false);
+			ctx.closePath();
+			ctx.fill();
+		}
+	}
+
+	// Border
+	ctx.strokeStyle = 'rgba(0,0,0,0.5)';
+	ctx.lineWidth = 1;
+	ctx.strokeRect( padX, padY, b, a );
+}
+
+function waveFlag( canvas, wavelength, amplitude, period, shading, squeeze ){
+	if (!squeeze)    squeeze    = 0;
+	if (!shading)    shading    = 100;
+	if (!period)     period     = 200;
+	if (!amplitude)  amplitude  = 10;
+	if (!wavelength) wavelength = canvas.width/10;
+
+	var fps = 30;
+	var ctx = canvas.getContext('2d');
+	var   w = canvas.width, h = canvas.height;
+	var  od = ctx.getImageData(0,0,w,h).data;
+	// var ct = 0, st=new Date;
+	return setInterval(function(){
+		var id = ctx.getImageData(0,0,w,h);
+		var  d = id.data;
+		var now = (new Date)/period;
+		for (var y=0;y<h;++y){
+			var lastO=0,shade=0;
+			var sq = (y-h/2)*squeeze;
+			for (var x=0;x<w;++x){
+				var px  = (y*w + x)*4;
+				var pct = x/w;
+				var o   = Math.sin(x/wavelength-now)*amplitude*pct;
+				var y2  = y + (o+sq*pct)<<0;
+				var opx = (y2*w + x)*4;
+				shade = (o-lastO)*shading;
+				d[px  ] = od[opx  ]+shade;
+				d[px+1] = od[opx+1]+shade;
+				d[px+2] = od[opx+2]+shade;
+				d[px+3] = od[opx+3];
+				lastO = o;
+			}
+		}
+		ctx.putImageData(id,0,0);
+		// if ((++ct)%100 == 0) console.log( 1000 * ct / (new Date - st));
+	},1000/fps);
+}
+
+</script>
+</body>
+</html>
